@@ -1,0 +1,24 @@
+body {
+    --color-text-primary: #131616;
+    --color-text-secondary: #ff6b00;
+    --color-bg-primary: #E6EDEE;
+    --color-bg-secondary: #7d86881c;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition: background 0.25s ease-in-out;
+  }
+  body[data-theme="light"] {
+    --color-text-primary: #131616;
+    --color-bg-primary: #E6EDEE;
+  }
+  body[data-theme="dark"] {
+    --color-text-primary: #F2F5F7;
+    --color-bg-primary: #0E141B;
+  }
+  .themeBtn {
+    padding: 10px;
+    color: var(--color-text-primary);
+    background: transparent;
+    border: 1px solid var(--color-text-primary);
+    cursor: pointer;
+  }
